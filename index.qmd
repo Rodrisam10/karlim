@@ -1,11 +1,34 @@
 ---
-title: "karlim"
+title: "karlim_posts"
+format: 
+  dashboard: 
+    logo: "images/neco_arc.jpg"
+    orientation: columns
 ---
 
-This is a Quarto website.
+## Column {width="35%"}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+**Recientes**
 
-```{r}
-1 + 1
+```{r, loadpackages}
+#| echo: false
+#| include: false
+library(tidyverse)
 ```
+- [Como codear R en colab](codear_R_colab.qmd)
+
+![](images/wlp.jpg)
+
+## Column {width="65%"}
+
+### Row {height="80%"}
+
+**Contenido**
+
+- [R: lo más básico](semana9.qmd) 
+
+- [Semana 10](semana10.qmd)
+
+### Row {height="20%"}
+
+- [Acerca de](about.qmd)

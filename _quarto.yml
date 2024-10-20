@@ -17,13 +17,12 @@ website:
     contents: 
       - section: "R desde cero"
         contents: 
-        - semana9.qmd
-        - semana10.qmd
+          - semana9.qmd
+          - semana10.qmd
 format:
   html:
     theme:
       light: cosmo
-      dark: [cosmo, custom.scss]
     toc: true
 
 

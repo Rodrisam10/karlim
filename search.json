@@ -7,6 +7,90 @@
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   },
   {
+    "objectID": "semana10.html",
+    "href": "semana10.html",
+    "title": "semana10.qmd",
+    "section": "",
+    "text": "Tener en cuenta:\n\nSignos de agrupación\nDeclaración explicita de la operación matemática a ejecutar\nJerarquía de operaciones\n\n\n# SUMA\n3+8\n\n[1] 11\n\n# RESTA\n3-8\n\n[1] -5\n\n# Multiplicación\n3*8\n\n[1] 24\n\n# División\n3/8\n\n[1] 0.375\n\n# Potenciación\n3^(8)\n\n[1] 6561\n\n\n\n\nR define la radicación para un valor de índice 2, para ampliar la ejecución a cualquier valor del índice, nos apoyamos en la definición de la radicación como exponente fraccionario. El argumento es “sqrt()”\n\n#radicación para índice = 2\nsqrt(81)\n\n[1] 9\n\n#radicación para cualquier valor de índice \n# result &lt;- m^(1/n)\n# Donde m es la base y n el índice de la raíz\n\n\n\n\nR define el logaritmo en base e, o logaritmo natural. Para ampliar la ejecución para caulquier número mayor que 0 y base mayor a 0 y diferente a 1, tenemos dos opciones\n\nOpción 1:\n\n\n# log(&lt;tu_numero&gt;, base = &lt;tu base&gt;)\n\n\nOpción 2:\n\n\n# log(&lt;tu_numero&gt;,&lt;tu_base&gt;)\n\nEste caso es símil a una función que admite dos argumentos: valor del número de prueba y el valor de la base.",
+    "crumbs": [
+      "Home",
+      "R desde cero",
+      "semana10.qmd"
+    ]
+  },
+  {
+    "objectID": "semana10.html#operaciones-básicas-en-r",
+    "href": "semana10.html#operaciones-básicas-en-r",
+    "title": "semana10.qmd",
+    "section": "",
+    "text": "Tener en cuenta:\n\nSignos de agrupación\nDeclaración explicita de la operación matemática a ejecutar\nJerarquía de operaciones\n\n\n# SUMA\n3+8\n\n[1] 11\n\n# RESTA\n3-8\n\n[1] -5\n\n# Multiplicación\n3*8\n\n[1] 24\n\n# División\n3/8\n\n[1] 0.375\n\n# Potenciación\n3^(8)\n\n[1] 6561\n\n\n\n\nR define la radicación para un valor de índice 2, para ampliar la ejecución a cualquier valor del índice, nos apoyamos en la definición de la radicación como exponente fraccionario. El argumento es “sqrt()”\n\n#radicación para índice = 2\nsqrt(81)\n\n[1] 9\n\n#radicación para cualquier valor de índice \n# result &lt;- m^(1/n)\n# Donde m es la base y n el índice de la raíz\n\n\n\n\nR define el logaritmo en base e, o logaritmo natural. Para ampliar la ejecución para caulquier número mayor que 0 y base mayor a 0 y diferente a 1, tenemos dos opciones\n\nOpción 1:\n\n\n# log(&lt;tu_numero&gt;, base = &lt;tu base&gt;)\n\n\nOpción 2:\n\n\n# log(&lt;tu_numero&gt;,&lt;tu_base&gt;)\n\nEste caso es símil a una función que admite dos argumentos: valor del número de prueba y el valor de la base.",
+    "crumbs": [
+      "Home",
+      "R desde cero",
+      "semana10.qmd"
+    ]
+  },
+  {
+    "objectID": "semana10.html#operaciones-combinadas",
+    "href": "semana10.html#operaciones-combinadas",
+    "title": "semana10.qmd",
+    "section": "Operaciones Combinadas",
+    "text": "Operaciones Combinadas\n\nEjemplos:\n\nformula_1 &lt;- log(2.5^1.2, 2.33) + sqrt((430^(1/1.4)-5)/(6.2))",
+    "crumbs": [
+      "Home",
+      "R desde cero",
+      "semana10.qmd"
+    ]
+  },
+  {
+    "objectID": "semana9.html",
+    "href": "semana9.html",
+    "title": "R: lo más básico",
+    "section": "",
+    "text": "Tener en cuenta:\n\nSignos de agrupación\nDeclaración explicita de la operación matemática a ejecutar\nJerarquía de operaciones\n\n\n# SUMA\n3+8\n\n[1] 11\n\n# RESTA\n3-8\n\n[1] -5\n\n# Multiplicación\n3*8\n\n[1] 24\n\n# División\n3/8\n\n[1] 0.375\n\n# Potenciación\n3^(8)\n\n[1] 6561\n\n\n\n\nR define la radicación para un valor de índice 2, para ampliar la ejecución a cualquier valor del índice, nos apoyamos en la definición de la radicación como exponente fraccionario. El argumento es “sqrt()”\n\n#radicación para índice = 2\nsqrt(81)\n\n[1] 9\n\n#radicación para cualquier valor de índice \n# result &lt;- m^(1/n)\n# Donde m es la base y n el índice de la raíz\n\n\n\n\nR define el logaritmo en base e, o logaritmo natural. Para ampliar la ejecución para caulquier número mayor que 0 y base mayor a 0 y diferente a 1, tenemos dos opciones\n\nOpción 1:\n\n\n# log(&lt;tu_numero&gt;, base = &lt;tu base&gt;)\n\n\nOpción 2:\n\n\n# log(&lt;tu_numero&gt;,&lt;tu_base&gt;)\n\nEste caso es símil a una función que admite dos argumentos: valor del número de prueba y el valor de la base.\n\n\n\n\n\n\nformula_1 &lt;- log(2.5^1.2, 2.33) + sqrt((430^(1/1.4)-5)/(6.2))",
+    "crumbs": [
+      "Home",
+      "R desde cero",
+      "R: lo más básico"
+    ]
+  },
+  {
+    "objectID": "semana9.html#operaciones-básicas-en-r",
+    "href": "semana9.html#operaciones-básicas-en-r",
+    "title": "R: lo más básico",
+    "section": "",
+    "text": "Tener en cuenta:\n\nSignos de agrupación\nDeclaración explicita de la operación matemática a ejecutar\nJerarquía de operaciones\n\n\n# SUMA\n3+8\n\n[1] 11\n\n# RESTA\n3-8\n\n[1] -5\n\n# Multiplicación\n3*8\n\n[1] 24\n\n# División\n3/8\n\n[1] 0.375\n\n# Potenciación\n3^(8)\n\n[1] 6561\n\n\n\n\nR define la radicación para un valor de índice 2, para ampliar la ejecución a cualquier valor del índice, nos apoyamos en la definición de la radicación como exponente fraccionario. El argumento es “sqrt()”\n\n#radicación para índice = 2\nsqrt(81)\n\n[1] 9\n\n#radicación para cualquier valor de índice \n# result &lt;- m^(1/n)\n# Donde m es la base y n el índice de la raíz\n\n\n\n\nR define el logaritmo en base e, o logaritmo natural. Para ampliar la ejecución para caulquier número mayor que 0 y base mayor a 0 y diferente a 1, tenemos dos opciones\n\nOpción 1:\n\n\n# log(&lt;tu_numero&gt;, base = &lt;tu base&gt;)\n\n\nOpción 2:\n\n\n# log(&lt;tu_numero&gt;,&lt;tu_base&gt;)\n\nEste caso es símil a una función que admite dos argumentos: valor del número de prueba y el valor de la base.\n\n\n\n\n\n\nformula_1 &lt;- log(2.5^1.2, 2.33) + sqrt((430^(1/1.4)-5)/(6.2))",
+    "crumbs": [
+      "Home",
+      "R desde cero",
+      "R: lo más básico"
+    ]
+  },
+  {
+    "objectID": "semana9.html#vectores-y-arreglos",
+    "href": "semana9.html#vectores-y-arreglos",
+    "title": "R: lo más básico",
+    "section": "Vectores y arreglos",
+    "text": "Vectores y arreglos\nR es muy útil para analizar una cantidad inconmensurable de datos, pero para poder utilizarlos es necesario ordenarlos. Por tanto, R trabaja en estructuras de datos, de las cuales, el más simple es el vector numérico. Consta de una colección ordenada de números. Por ejemplo, tu colección de tiempo de duración de tus estados, en segundos:\n\ntime_status &lt;- c(30.56,20,25.49,62.6,15.38)\n\npara llevar a cabo este vector, se empleó la función combinar &lt; c() &gt; y el operador de asignación por convención &lt; &lt;- &gt;\nNo obstante, no es la única forma de asignar una variable a un vector, es posible escribirlo en orientación contraria o mediante la función &lt; assign() &gt;:\n\nNormalFlipeadoAssign\n\n\ntime_status &lt;- c(30.56,20,25.49,62.6,15.38)\n\n\nc(30.56,20,25.49,62.6,15.38) -&gt; time_status\n\n\nassign(\"time_status\", c(30.56,20,25.49,62.6,15.38))\n\n\n\n\nPropiedades\n\nTipo: el vector sólo admite alojar un mismo tipo de datos, por lo cual son atómicos.\nLongitud: El número de elementos del vector\nAtributo: Capaz de tener características que describen a los propios datos contenidos (metadatos).\n\n\n\nTipos de vectores\nAquí debajo tienes una colección de vectores\n\n# Vector numérico:colección de índice de masa corporal\n\nIMC &lt;- c(19.3,25.7,21.8,27,32.9)\n\n# Vector de cadena de texto: monedas de sudamérica\n\nmoney_lat &lt;- c('sol','boliviano','peso argentino','bolivar','real')\n\n#Vector lógico: Estudiantes que obtuvieron nota 20 en el parcial de inmunología\n\ninmuno_test &lt;- c(FALSE, FALSE, FALSE, FALSE, FALSE)\n\nSi deseas agregar elementos a un vector, puedes combinar dicho vector con los elementos nuevos, de tal forma que se sobrescribe.\n\nnucleotidos &lt;- c('A','T','G')\n\nnucleotidos &lt;- c(nucleotidos,'C')\n\nnucleotidos\n\n[1] \"A\" \"T\" \"G\" \"C\"\n\n\nTambién podemos combinar vectores\n\nnucleotidos_DNA &lt;- c('A','T','G','C')\n\nnucleotido_RNA &lt;-c('U')\n\nnucleotidos &lt;- c(nucleotidos_DNA, nucleotido_RNA)\n\nnucleotidos\n\n[1] \"A\" \"T\" \"G\" \"C\" \"U\"\n\n\n\n\n¿Cómo verifico si lo que veo es un vector?\nMediante el comando &lt; is.vector() &gt;, por ejemplo:\n\n  8\n\n[1] 8\n\n\nDatos simples como el 8 son en realidad vectores de longitud la unidad:\n\n# Prueba de identidad\nis.vector(8)\n\n[1] TRUE\n\n#Prueba de longitud de vector\nlength(8)\n\n[1] 1\n\n\n\n\n¿Qué pasa si añado un dato de diferente tipo al de los demás presentes en un vector?\nR realizará coerción: el vector resultante será del tipo más versátil, de acuerdo a las reglas de coerción. Pongamos un ejemplo:\n\nboolean_values &lt;- c(TRUE, TRUE, TRUE, FALSE)\n\nclass(boolean_values)\n\n[1] \"logical\"\n\n\nSi agregas un dato de diferente tipo, como un string:\n\nnew_vector &lt;- c(boolean_values, 'alpha')\n\nclass(new_vector)\n\n[1] \"character\"\n\n\nLas cadenas de texto o strings son el tipo de dato más sensible, en consecuencia nuestro vector será de tipo cadena de texto.\n\n\n¿Cómo extraer datos de un vector?\n\nPara un dato: referimos la variable y entre corchetes ([]) la posición del elemnto dentro del vector. Recordar: En R contamos desde el 1\n\n\nnucleotidos_DNA[2]\n\n[1] \"T\"\n\n\n\nPara más de un dato: referimos la variable y entre corcehtes indicamos el vector que contenga el orden de los elementos a extraer.\n\n\nnucleotidos[c(1,3,4)]\n\n[1] \"A\" \"G\" \"C\"\n\n\n\nPara todos los datos, excepto: referimos la variable y entre corcehtes indicamos la posición del elemento precedido por un menos &lt;-&gt;\n\n\nnucleotidos[-2]\n\n[1] \"A\" \"G\" \"C\" \"U\"\n\n\n\n\nVectores numéricos secuenciales\nPara generar un vector numérico constituido por números secuenciales cuya diferencia absoluta entro elementos sea la unidad, se empleará &lt;:&gt;\n\n# POSITIVOS\nsucesion &lt;- c(1:10)\nsucesion\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n#NEGATIVOS\n\nsucesion_menos &lt;-c(-45:-15)\nsucesion_menos\n\n [1] -45 -44 -43 -42 -41 -40 -39 -38 -37 -36 -35 -34 -33 -32 -31 -30 -29 -28 -27\n[20] -26 -25 -24 -23 -22 -21 -20 -19 -18 -17 -16 -15\n\n\n\n\nVectorización de operaciones\nAl ejecutar operaciones en los vectores se afectará el valor de cada elemento.\n\nsucesion + 5\n\n [1]  6  7  8  9 10 11 12 13 14 15\n\nsucesion\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\n\nTambién funciona para operaciones lógicas:\n\nsucesion &lt; 10\n\n [1]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE",
+    "crumbs": [
+      "Home",
+      "R desde cero",
+      "R: lo más básico"
+    ]
+  },
+  {
+    "objectID": "semana9.html#matrices",
+    "href": "semana9.html#matrices",
+    "title": "R: lo más básico",
+    "section": "Matrices",
+    "text": "Matrices\nLas matrices son arreglos rectangulares de filas y columnas que alojan información numérica, strings o lógica.\nLa función para declarar una matriz es matrix(), la cual admite 4 argumentos:\n\ndata: sirve para indicar qué datos se alojarán en la matriz, aquí podemos por ejemplo, referir una variable previamente declarada\nnrow: sirve para delcarar el número de filas\nncol: sirve para declarar el número de columnas\nbyrow: argumento lógico que sirve para indicar si la información contenida en data debe ser ingresada por filas.\n\n\narreglo &lt;- matrix(data = 1:30, nrow = 6, ncol = 5, byrow = FALSE)\narreglo\n\n     [,1] [,2] [,3] [,4] [,5]\n[1,]    1    7   13   19   25\n[2,]    2    8   14   20   26\n[3,]    3    9   15   21   27\n[4,]    4   10   16   22   28\n[5,]    5   11   17   23   29\n[6,]    6   12   18   24   30\n\n\nOtra forma de declarar matrices es mediante la unión de vectores empleando las siguientes funciones:\n\ncbind(): une vectores tratando a cada uno como una columna de la futura matriz\nrbind(): une vectores tratando a cada uno como una fila de la futura matriz\n\nAhora usemos cbind() para declarar la misma matriz del ejemplo anterior. Creamos 5 vectores de longitud 5:\n\nvector_1 &lt;- 1:6\nvector_2 &lt;- 7:12\nvector_3 &lt;- 13:18\nvector_4 &lt;- 19:24\nvector_5 &lt;- 25:30\n\nUsamos cbind() para crear una matriz 6x5 en la que cada vector será una columna:\n\narreglo_2 &lt;- cbind(\n  vector_1,\n  vector_2,\n  vector_3,\n  vector_4,\n  vector_5\n)\n\narreglo_2\n\n     vector_1 vector_2 vector_3 vector_4 vector_5\n[1,]        1        7       13       19       25\n[2,]        2        8       14       20       26\n[3,]        3        9       15       21       27\n[4,]        4       10       16       22       28\n[5,]        5       11       17       23       29\n[6,]        6       12       18       24       30\n\n\n\nObservaciones:\nCuando el número de celdas de la matriz es diferente al número de datos, pueden darse dos casos:\n\nN° elementos &gt; N° celdas: Se acomodarán todos los datos posibles y los restantes se omitirán.\n\n\noversized_1 &lt;- matrix(1:9, nrow = 3, ncol = 2)\n\nWarning in matrix(1:9, nrow = 3, ncol = 2): data length [9] is not a\nsub-multiple or multiple of the number of columns [2]\n\noversized_1\n\n     [,1] [,2]\n[1,]    1    4\n[2,]    2    5\n[3,]    3    6\n\n\n\nN° de elementos &lt; N° celdas: Se reciclarán los datos para completar todas las celdas. R nos notificará mediante una advertencia\n\n\noversized_2 &lt;- matrix(1:9, nrow = 3, ncol = 4)\n\nWarning in matrix(1:9, nrow = 3, ncol = 4): data length [9] is not a\nsub-multiple or multiple of the number of columns [4]\n\noversized_2\n\n     [,1] [,2] [,3] [,4]\n[1,]    1    4    7    1\n[2,]    2    5    8    2\n[3,]    3    6    9    3\n\n\n\n\nPropiedades de las matrices\n\nEs posible verificar que pertenecen a la clase matrix mediante la función class(),\nSe puede evaluar la dimensión de la matriz, el cual nos indica el numero de elementos dispuestos por fila y columna:\n\n\nmatrix_example &lt;- matrix(1:24, nrow = 6, ncol = 4, byrow = TRUE)\n\ndim(matrix_example)\n\n[1] 6 4\n\n\n\n\nVectorización de operaciones en matrices\nLas operaciones aritm+eticas también pueden ser vectorizadas como en los vectores al aplicarse en matrices. En consecuencia, la operación declarada se ejecutará a cada elemento que pertenezca a tu matriz.\nContinuando con `matrix_example:\n\n# Suma\n\nmatrix_example + 3\n\n     [,1] [,2] [,3] [,4]\n[1,]    4    5    6    7\n[2,]    8    9   10   11\n[3,]   12   13   14   15\n[4,]   16   17   18   19\n[5,]   20   21   22   23\n[6,]   24   25   26   27\n\n\n\n# Multiplicación\n\nmatrix_example * 3\n\n     [,1] [,2] [,3] [,4]\n[1,]    3    6    9   12\n[2,]   15   18   21   24\n[3,]   27   30   33   36\n[4,]   39   42   45   48\n[5,]   51   54   57   60\n[6,]   63   66   69   72\n\n\n\n# Potenciación\n\nmatrix_example / 3\n\n          [,1]      [,2]     [,3]     [,4]\n[1,] 0.3333333 0.6666667 1.000000 1.333333\n[2,] 1.6666667 2.0000000 2.333333 2.666667\n[3,] 3.0000000 3.3333333 3.666667 4.000000\n[4,] 4.3333333 4.6666667 5.000000 5.333333\n[5,] 5.6666667 6.0000000 6.333333 6.666667\n[6,] 7.0000000 7.3333333 7.666667 8.000000\n\n\nPor último podemos usar la función t() para transponer una matriz, es decir, invertir la organización de filas y columnas mxn a nxm.\n\n# Trasposición\n\nmatrix_example_t &lt;- t(matrix_example)\n\nmatrix_example_t\n\n     [,1] [,2] [,3] [,4] [,5] [,6]\n[1,]    1    5    9   13   17   21\n[2,]    2    6   10   14   18   22\n[3,]    3    7   11   15   19   23\n[4,]    4    8   12   16   20   24",
+    "crumbs": [
+      "Home",
+      "R desde cero",
+      "R: lo más básico"
+    ]
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",

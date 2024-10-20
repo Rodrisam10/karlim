@@ -11,10 +11,19 @@ website:
         text: About
       - href: dashboard.qmd
         text: Dashboard
-
+  sidebar: 
+    style: "docked"
+    search: true
+    contents: 
+      - section: "R desde cero"
+        contents: 
+        - semana9.qmd
+        - semana10.qmd
 format:
   html:
-    theme: [cosmo, custom.scss]
+    theme:
+      light: cosmo
+      dark: [cosmo, custom.scss]
     toc: true
 
 

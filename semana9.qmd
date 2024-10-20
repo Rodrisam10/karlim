@@ -1,0 +1,357 @@
+---
+title: "R: lo más básico"
+---
+
+## Operaciones básicas en R
+
+Tener en cuenta:
+
+1. Signos de agrupación
+2. Declaración explicita de la operación matemática a ejecutar
+3. Jerarquía de operaciones
+
+```{r}
+# SUMA
+3+8
+
+# RESTA
+3-8
+
+# Multiplicación
+3*8
+
+# División
+3/8
+
+# Potenciación
+3^(8)
+```
+### Radicación
+
+R define la radicación para un valor de índice 2, para ampliar la ejecución a cualquier valor del índice, nos apoyamos en la definición de la radicación como exponente fraccionario. El argumento es "sqrt()"
+
+```{r}
+#radicación para índice = 2
+sqrt(81)
+
+#radicación para cualquier valor de índice 
+# result <- m^(1/n)
+# Donde m es la base y n el índice de la raíz
+```
+
+### Logaritmo 
+
+R define el logaritmo en base e, o logaritmo natural. Para ampliar la ejecución para caulquier número mayor que 0 y base mayor a 0 y diferente a 1, tenemos dos opciones
+
+- Opción 1: 
+
+```{r}
+# log(<tu_numero>, base = <tu base>)
+```
+
+- Opción 2:
+
+```{r}
+# log(<tu_numero>,<tu_base>)
+```
+Este caso es símil a una función que admite dos argumentos: valor del número de prueba y el valor de la base.
+
+### Operaciones Combinadas
+
+#### Ejemplos:
+
+```{r}
+formula_1 <- log(2.5^1.2, 2.33) + sqrt((430^(1/1.4)-5)/(6.2))
+```
+
+## Vectores y arreglos
+
+R es muy útil para analizar una cantidad inconmensurable de datos, pero para poder utilizarlos es necesario ordenarlos. Por tanto, R trabaja en estructuras de datos, de las cuales, el más simple es el vector numérico. Consta de una colección ordenada de números. Por ejemplo, tu colección de tiempo de duración de tus estados, en segundos:
+
+```{r}
+time_status <- c(30.56,20,25.49,62.6,15.38)
+```
+
+para llevar a cabo este vector, se empleó la función combinar < _c()_ > y el operador de asignación por convención < _<-_ >
+
+No obstante, no es la única forma de asignar una variable a un vector, es posible escribirlo en orientación contraria o mediante la función < _assign()_ >:
+
+::: {.panel-tabset}
+## Normal
+
+``` {.r}
+time_status <- c(30.56,20,25.49,62.6,15.38)
+```
+
+## Flipeado
+
+``` {.r}
+c(30.56,20,25.49,62.6,15.38) -> time_status
+```
+## Assign
+```{.r}
+assign("time_status", c(30.56,20,25.49,62.6,15.38))
+```
+:::
+
+
+### Propiedades
+
+- **Tipo**: el vector sólo admite alojar un mismo tipo de datos, por lo cual son _atómicos_.
+
+- **Longitud**: El número de elementos del vector
+  
+- **Atributo**: Capaz de tener características que describen a los propios datos contenidos (metadatos).
+
+### Tipos de vectores
+
+Aquí debajo tienes una colección de vectores 
+
+```{r}
+# Vector numérico:colección de índice de masa corporal
+
+IMC <- c(19.3,25.7,21.8,27,32.9)
+
+# Vector de cadena de texto: monedas de sudamérica
+
+money_lat <- c('sol','boliviano','peso argentino','bolivar','real')
+
+#Vector lógico: Estudiantes que obtuvieron nota 20 en el parcial de inmunología
+
+inmuno_test <- c(FALSE, FALSE, FALSE, FALSE, FALSE)
+```
+
+Si deseas agregar elementos a un vector, puedes combinar dicho vector con los elementos nuevos, de tal forma que se sobrescribe.
+
+```{r}
+nucleotidos <- c('A','T','G')
+
+nucleotidos <- c(nucleotidos,'C')
+
+nucleotidos
+
+```
+
+También podemos combinar vectores
+
+```{r}
+nucleotidos_DNA <- c('A','T','G','C')
+
+nucleotido_RNA <-c('U')
+
+nucleotidos <- c(nucleotidos_DNA, nucleotido_RNA)
+
+nucleotidos
+
+```
+
+### ¿Cómo verifico si lo que veo es un vector?
+
+Mediante el comando < _is.vector()_ >, por ejemplo:
+  
+```{r}
+  8
+```
+Datos simples como el 8 son en realidad vectores de longitud la unidad:
+  
+```{r}
+# Prueba de identidad
+is.vector(8)
+
+#Prueba de longitud de vector
+length(8)
+```
+
+### ¿Qué pasa si añado un dato de diferente tipo al de los demás presentes en un vector?
+
+R realizará **coerción**: el vector resultante será del tipo más versátil, de acuerdo a las reglas de coerción. Pongamos un ejemplo:
+
+```{r}
+boolean_values <- c(TRUE, TRUE, TRUE, FALSE)
+
+class(boolean_values)
+```
+
+Si agregas un dato de diferente tipo, como un string:
+
+```{r}
+new_vector <- c(boolean_values, 'alpha')
+
+class(new_vector)
+```
+
+Las cadenas de texto o strings son el tipo de dato  más sensible, en consecuencia nuestro vector será de tipo cadena de texto.
+
+### ¿Cómo extraer datos de un vector?
+
+-  **Para un dato:** referimos la variable y entre corchetes ([]) la posición del elemnto dentro del vector.     **Recordar**: En R contamos desde el 1
+  
+```{r}
+nucleotidos_DNA[2]
+```
+  
+- **Para más de un dato:** referimos la variable y entre corcehtes indicamos el vector que contenga el orden de     los elementos a extraer.
+
+```{r}
+nucleotidos[c(1,3,4)]
+```
+
+- **Para todos los datos, excepto:** referimos la variable y entre corcehtes indicamos la posición del elemento precedido     por un menos <->
+  
+```{r}
+nucleotidos[-2]
+```
+  
+### Vectores numéricos secuenciales
+
+Para generar un vector numérico constituido por números secuenciales cuya diferencia absoluta entro elementos sea la unidad, se empleará <:>
+
+```{r}
+# POSITIVOS
+sucesion <- c(1:10)
+sucesion
+
+#NEGATIVOS
+
+sucesion_menos <-c(-45:-15)
+sucesion_menos
+```
+
+### Vectorización de operaciones
+
+Al ejecutar operaciones en los vectores se afectará el valor de cada elemento.
+
+```{r}
+sucesion + 5
+sucesion
+```
+
+También funciona para operaciones lógicas:
+
+```{r}
+sucesion < 10
+```
+
+## Matrices
+
+Las matrices son arreglos rectangulares de filas y columnas que alojan información numérica, strings o lógica.
+
+La función para declarar una matriz es  ```matrix()```, la cual admite 4 argumentos:
+
+- ```data```: sirve para indicar qué datos se alojarán en la matriz, aquí podemos por ejemplo, referir una variable previamente declarada
+
+- ```nrow```: sirve para delcarar el número de filas
+
+- ```ncol```: sirve para declarar el número de columnas
+
+- ```byrow```: argumento lógico que sirve para indicar si la información contenida en ```data``` debe ser ingresada por filas.
+
+
+```{r}
+arreglo <- matrix(data = 1:30, nrow = 6, ncol = 5, byrow = FALSE)
+arreglo
+```
+
+
+Otra forma de declarar matrices es mediante la unión de vectores empleando las siguientes funciones:
+
+- ```cbind()```: une vectores tratando a cada uno como una columna de la futura matriz
+
+- ```rbind()```: une vectores tratando a cada uno como una fila de la futura matriz
+
+
+Ahora usemos ````cbind()```` para declarar la misma matriz del ejemplo anterior. Creamos 5 vectores de longitud 5:
+
+```{r}
+vector_1 <- 1:6
+vector_2 <- 7:12
+vector_3 <- 13:18
+vector_4 <- 19:24
+vector_5 <- 25:30
+```
+Usamos ```cbind()``` para crear una matriz 6x5 en la que cada vector será una columna:
+
+
+```{r}
+arreglo_2 <- cbind(
+  vector_1,
+  vector_2,
+  vector_3,
+  vector_4,
+  vector_5
+)
+
+arreglo_2
+```
+
+#### Observaciones:
+
+Cuando el número de celdas de la matriz es diferente al número de datos, pueden darse dos casos:
+
+- **N° elementos > N° celdas:** Se acomodarán todos los datos posibles y los restantes se omitirán.
+
+```{r}
+oversized_1 <- matrix(1:9, nrow = 3, ncol = 2)
+
+oversized_1
+```
+
+- **N° de elementos < N° celdas:** Se reciclarán los datos para completar todas las celdas. R nos notificará mediante una advertencia
+
+```{r}
+oversized_2 <- matrix(1:9, nrow = 3, ncol = 4)
+
+oversized_2
+
+```
+
+### Propiedades de las matrices
+
+- Es posible verificar que pertenecen a la clase ```matrix``` mediante la función ```class()```,
+
+- Se puede evaluar la dimensión de la matriz, el cual nos indica el numero de elementos dispuestos por fila y columna:
+
+```{r}
+matrix_example <- matrix(1:24, nrow = 6, ncol = 4, byrow = TRUE)
+
+dim(matrix_example)
+```
+
+### Vectorización de operaciones en matrices
+
+Las operaciones aritm+eticas también pueden ser vectorizadas como en los vectores al aplicarse en matrices. En consecuencia, la operación declarada se ejecutará a cada elemento que pertenezca a tu matriz.
+
+Continuando con ````matrix_example```:
+
+
+```{r}
+# Suma
+
+matrix_example + 3
+
+```
+
+```{r}
+# Multiplicación
+
+matrix_example * 3
+
+```
+
+```{r}
+# Potenciación
+
+matrix_example / 3
+
+```
+
+Por último podemos usar la función ```t()``` para transponer una matriz, es decir, invertir la organización de filas y columnas mxn a nxm.
+
+```{r}
+# Trasposición
+
+matrix_example_t <- t(matrix_example)
+
+matrix_example_t
+
+```

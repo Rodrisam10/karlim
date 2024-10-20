@@ -1,0 +1,65 @@
+---
+title: "semana10.qmd"
+---
+
+## Operaciones básicas en R
+
+Tener en cuenta:
+
+1. Signos de agrupación
+2. Declaración explicita de la operación matemática a ejecutar
+3. Jerarquía de operaciones
+
+```{r}
+# SUMA
+3+8
+
+# RESTA
+3-8
+
+# Multiplicación
+3*8
+
+# División
+3/8
+
+# Potenciación
+3^(8)
+```
+### Radicación
+
+R define la radicación para un valor de índice 2, para ampliar la ejecución a cualquier valor del índice, nos apoyamos en la definición de la radicación como exponente fraccionario. El argumento es "sqrt()"
+
+```{r}
+#radicación para índice = 2
+sqrt(81)
+
+#radicación para cualquier valor de índice 
+# result <- m^(1/n)
+# Donde m es la base y n el índice de la raíz
+```
+
+### Logaritmo 
+
+R define el logaritmo en base e, o logaritmo natural. Para ampliar la ejecución para caulquier número mayor que 0 y base mayor a 0 y diferente a 1, tenemos dos opciones
+
+- Opción 1: 
+
+```{r}
+# log(<tu_numero>, base = <tu base>)
+```
+
+- Opción 2:
+
+```{r}
+# log(<tu_numero>,<tu_base>)
+```
+Este caso es símil a una función que admite dos argumentos: valor del número de prueba y el valor de la base.
+
+## Operaciones Combinadas
+
+### Ejemplos:
+
+```{r}
+formula_1 <- log(2.5^1.2, 2.33) + sqrt((430^(1/1.4)-5)/(6.2))
+```

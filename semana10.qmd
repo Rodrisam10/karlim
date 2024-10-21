@@ -1,5 +1,6 @@
 ---
 title: "semana10.qmd"
+comments: false
 ---
 
 ## Operaciones básicas en R

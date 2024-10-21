@@ -19,11 +19,18 @@ website:
         contents: 
           - semana9.qmd
           - semana10.qmd
+  
+
 format:
   html:
+    comments:
+      giscus: 
+        repo: quarto-dev/quarto-docs
     theme:
       light: cosmo
     toc: true
+    
+
 
 
 

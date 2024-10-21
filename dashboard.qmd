@@ -4,6 +4,7 @@ format:
   dashboard: 
     logo: "images/neco_arc.jpg"
     orientation: columns
+comments: false
 ---
 
 ## Column {width="35%"}

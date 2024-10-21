@@ -355,3 +355,131 @@ matrix_example_t <- t(matrix_example)
 matrix_example_t
 
 ```
+
+## Data frames
+
+Son estrucutra de datos bidimensionales capaces de contener datos de diferentes tipos, bajo ciertas reglas.
+
+Las filas de un dataframe pueden contener datos de diferentes tipos, mas no las columnas. En conseceucnia, las columnas pueden representar atributos, variables u observaciones.
+
+```{r}
+head(iris)
+```
+
+En este ejemplo, ```iris``` es un dataframe cargado por default en R, en el cual hay datos de tipo numérico y strings. 
+
+Para crear un dataframe se empleará la función ```data.frame()```, cuyo input son los vectores. En conclusión, **Un dataframe esta compuesto por vectores**. Cada input de vector está separado por comas. 
+
+Si bien con tener los vectores definidos basta (véase primera pestaña), podemos definir dataframes a partir de vectores pero asignando un string determinado a conveniencia para el encabezado, véase segunda pestaña:
+
+
+::: {.panel-tabset}
+
+## classic
+
+```{.r}
+Sepal.Length <-c(5.1,4.9,4.7,4.6,5.0,5.4)
+Sepal.Width <- c(3.5,3.0,3.2,3.1,3.6,3.9)
+Petal.Length <- c(1.4,1.4,1.3,1.5,1.4,1.7)
+Petal.Width <- c(0.2,0.2,0.2,0.2,0.20,0.4)
+Species <- c('setosa','setosa','setosa','setosa','setosa','setosa')
+
+iris_dt <-data.frame(Sepal.Length,
+                      Sepal.Width,
+                      Petal.Length,
+                      Petal.Width,
+                      Species)
+print(iris_dt)
+
+```
+
+## Alternative
+
+```{.r}
+iris_alt_dt <- data.frame(
+'Sepal.L'  = c(5.1,4.9,4.7,4.6,5.0,5.4),
+'Sepal.W' = c(3.5,3.0,3.2,3.1,3.6,3.9),
+'Petal.L' = c(1.4,1.4,1.3,1.5,1.4,1.7),
+'Petal.W' = c(0.2,0.2,0.2,0.2,0.20,0.4),
+'Specie' = c('setosa','setosa','setosa','setosa','setosa','setosa')
+)
+
+print(iris_alt_dt)
+```
+:::
+
+Se puede usar los comandos ```dim()```,```length()``` y ```names()``` para evaluar la dimensi+on, cantidad de datos alojados y el encabezado del dataframe, respectivamente.
+
+### Coerción de una matriz a un data frame
+
+Se emplea la función ```as.data.frame```, debajo un ejemplo:
+
+```{r}
+matrix1 <- matrix(1:12, ncol = 4)
+```
+
+Usamos la función para coercionar matrices en dataframes:
+
+```{r}
+df <- as.data.frame(matrix1)
+df
+```
+
+### Vectorización de operaciones en dataframes
+
+Los resultados obtenidos dependerán del tipo de datos de cada columna, En caso presente incompatibilidades, R nos notificará mediante una advertencia y las convertirá en valores not allowed (NA)
+
+
+::: {.panel-tabset}
+
+## Ejemplo 1
+```{r}
+df * 2
+```
+
+## Ejemplo 2
+
+```{r}
+iris_alt_dt <- data.frame(
+'Sepal.L'  = c(5.1,4.9,4.7,4.6,5.0,5.4),
+'Sepal.W' = c(3.5,3.0,3.2,3.1,3.6,3.9),
+'Petal.L' = c(1.4,1.4,1.3,1.5,1.4,1.7),
+'Petal.W' = c(0.2,0.2,0.2,0.2,0.20,0.4)
+)
+iris_alt_dt + 2
+```
+:::
+
+## Listas
+
+A diferencia de los vectores, las listas si admiten contener diferentes tipos de datos, incluso otra lista.
+
+Para crear una lista usamos la función ```list()```, el cual admite como input cualquier elemento previamente definido. sin importar las dimensiones o largo de dichos elementos. Debajo un ejemplo:
+
+```{r}
+# VECTOR LÓGICO
+endangered_species <- c(FALSE, TRUE, TRUE, FALSE, TRUE)
+
+# VECTOR DE TIPO CHARACTER
+sites <- c('Site_A', 'Site_B', 'Site_C', 'Site_D', 'Site_E')
+
+# VECTOR NUMÉRICO
+species_count <- c(8, 15, 9, 12, 6)
+
+# DATAFRAME
+individuals <- c(102, 234, 89, 156, 98)
+shannon_index <- c(1.45, 2.18, 1.67, 2.01, 1.34)
+
+dataframe_ecosystem_analysis <- data.frame(sites, species_count, individuals, shannon_index, endangered_species)
+
+# MATRIX
+matrix_2 <- matrix(data = 11:20, nrow = 5, ncol = 2, byrow = TRUE)
+
+# LISTA
+ecosystem_data <- list(endangered_species, sites, species_count, dataframe_ecosystem_analysis, matrix_2)
+
+ecosystem_data
+```
+
+
+

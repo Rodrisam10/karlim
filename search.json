@@ -1,41 +1,5 @@
 [
   {
-    "objectID": "semana10.html",
-    "href": "semana10.html",
-    "title": "semana10.qmd",
-    "section": "",
-    "text": "Tener en cuenta:\n\nSignos de agrupación\nDeclaración explicita de la operación matemática a ejecutar\nJerarquía de operaciones\n\n\n# SUMA\n3+8\n\n[1] 11\n\n# RESTA\n3-8\n\n[1] -5\n\n# Multiplicación\n3*8\n\n[1] 24\n\n# División\n3/8\n\n[1] 0.375\n\n# Potenciación\n3^(8)\n\n[1] 6561\n\n\n\n\nR define la radicación para un valor de índice 2, para ampliar la ejecución a cualquier valor del índice, nos apoyamos en la definición de la radicación como exponente fraccionario. El argumento es “sqrt()”\n\n#radicación para índice = 2\nsqrt(81)\n\n[1] 9\n\n#radicación para cualquier valor de índice \n# result &lt;- m^(1/n)\n# Donde m es la base y n el índice de la raíz\n\n\n\n\nR define el logaritmo en base e, o logaritmo natural. Para ampliar la ejecución para caulquier número mayor que 0 y base mayor a 0 y diferente a 1, tenemos dos opciones\n\nOpción 1:\n\n\n# log(&lt;tu_numero&gt;, base = &lt;tu base&gt;)\n\n\nOpción 2:\n\n\n# log(&lt;tu_numero&gt;,&lt;tu_base&gt;)\n\nEste caso es símil a una función que admite dos argumentos: valor del número de prueba y el valor de la base.",
-    "crumbs": [
-      "Home",
-      "R desde cero",
-      "semana10.qmd"
-    ]
-  },
-  {
-    "objectID": "semana10.html#operaciones-básicas-en-r",
-    "href": "semana10.html#operaciones-básicas-en-r",
-    "title": "semana10.qmd",
-    "section": "",
-    "text": "Tener en cuenta:\n\nSignos de agrupación\nDeclaración explicita de la operación matemática a ejecutar\nJerarquía de operaciones\n\n\n# SUMA\n3+8\n\n[1] 11\n\n# RESTA\n3-8\n\n[1] -5\n\n# Multiplicación\n3*8\n\n[1] 24\n\n# División\n3/8\n\n[1] 0.375\n\n# Potenciación\n3^(8)\n\n[1] 6561\n\n\n\n\nR define la radicación para un valor de índice 2, para ampliar la ejecución a cualquier valor del índice, nos apoyamos en la definición de la radicación como exponente fraccionario. El argumento es “sqrt()”\n\n#radicación para índice = 2\nsqrt(81)\n\n[1] 9\n\n#radicación para cualquier valor de índice \n# result &lt;- m^(1/n)\n# Donde m es la base y n el índice de la raíz\n\n\n\n\nR define el logaritmo en base e, o logaritmo natural. Para ampliar la ejecución para caulquier número mayor que 0 y base mayor a 0 y diferente a 1, tenemos dos opciones\n\nOpción 1:\n\n\n# log(&lt;tu_numero&gt;, base = &lt;tu base&gt;)\n\n\nOpción 2:\n\n\n# log(&lt;tu_numero&gt;,&lt;tu_base&gt;)\n\nEste caso es símil a una función que admite dos argumentos: valor del número de prueba y el valor de la base.",
-    "crumbs": [
-      "Home",
-      "R desde cero",
-      "semana10.qmd"
-    ]
-  },
-  {
-    "objectID": "semana10.html#operaciones-combinadas",
-    "href": "semana10.html#operaciones-combinadas",
-    "title": "semana10.qmd",
-    "section": "Operaciones Combinadas",
-    "text": "Operaciones Combinadas\n\nEjemplos:\n\nformula_1 &lt;- log(2.5^1.2, 2.33) + sqrt((430^(1/1.4)-5)/(6.2))",
-    "crumbs": [
-      "Home",
-      "R desde cero",
-      "semana10.qmd"
-    ]
-  },
-  {
     "objectID": "codear_R_colab.html",
     "href": "codear_R_colab.html",
     "title": "Cómo codear en R dentro de google Colab",
@@ -48,6 +12,13 @@
     "title": "Cómo codear en R dentro de google Colab",
     "section": "",
     "text": "Diríjase a la barra de tareas de google colab, busque “entorno de ejecución” (o su equivalente en el idioma que tiene configurado).\n\n\nEn el menú desplegable, busque “cambiar entorno de ejecución” (o su equivalente en el idioma que tiene configurado) y dele click (Véase Imagen_1)\n\n\n\n\n\nImagen_1\n\n\n\n\nSe abre el menú “Cambiar tipo de entorno de ejecución”, en la casilla desplegable debajo de “Tipo de entorno de ejecución”, cambie la casilla por default “Python3” a “R” (Véase Imagen 2)\n\n\n\n\n\nImagen_2\n\n\n\n\nClick en guardar.\n\n\nAhora puede codear en R sin cargar paquetes adicionales. Para enviar su tarea por el classroom, sólo adjunte el link compartido de su cuaderno en Colab. Este método se usará hasta que el classroom soporte subir archivos.\n\n\"c_va.png\"\n\n[1] \"c_va.png\""
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "semana9.html",
@@ -122,10 +93,39 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "semana10.html",
+    "href": "semana10.html",
+    "title": "semana10.qmd",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Tener en cuenta:\n\nSignos de agrupación\nDeclaración explicita de la operación matemática a ejecutar\nJerarquía de operaciones\n\n\n# SUMA\n3+8\n\n[1] 11\n\n# RESTA\n3-8\n\n[1] -5\n\n# Multiplicación\n3*8\n\n[1] 24\n\n# División\n3/8\n\n[1] 0.375\n\n# Potenciación\n3^(8)\n\n[1] 6561\n\n\n\n\nR define la radicación para un valor de índice 2, para ampliar la ejecución a cualquier valor del índice, nos apoyamos en la definición de la radicación como exponente fraccionario. El argumento es “sqrt()”\n\n#radicación para índice = 2\nsqrt(81)\n\n[1] 9\n\n#radicación para cualquier valor de índice \n# result &lt;- m^(1/n)\n# Donde m es la base y n el índice de la raíz\n\n\n\n\nR define el logaritmo en base e, o logaritmo natural. Para ampliar la ejecución para caulquier número mayor que 0 y base mayor a 0 y diferente a 1, tenemos dos opciones\n\nOpción 1:\n\n\n# log(&lt;tu_numero&gt;, base = &lt;tu base&gt;)\n\n\nOpción 2:\n\n\n# log(&lt;tu_numero&gt;,&lt;tu_base&gt;)\n\nEste caso es símil a una función que admite dos argumentos: valor del número de prueba y el valor de la base.",
+    "crumbs": [
+      "Home",
+      "R desde cero",
+      "semana10.qmd"
+    ]
+  },
+  {
+    "objectID": "semana10.html#operaciones-básicas-en-r",
+    "href": "semana10.html#operaciones-básicas-en-r",
+    "title": "semana10.qmd",
+    "section": "",
+    "text": "Tener en cuenta:\n\nSignos de agrupación\nDeclaración explicita de la operación matemática a ejecutar\nJerarquía de operaciones\n\n\n# SUMA\n3+8\n\n[1] 11\n\n# RESTA\n3-8\n\n[1] -5\n\n# Multiplicación\n3*8\n\n[1] 24\n\n# División\n3/8\n\n[1] 0.375\n\n# Potenciación\n3^(8)\n\n[1] 6561\n\n\n\n\nR define la radicación para un valor de índice 2, para ampliar la ejecución a cualquier valor del índice, nos apoyamos en la definición de la radicación como exponente fraccionario. El argumento es “sqrt()”\n\n#radicación para índice = 2\nsqrt(81)\n\n[1] 9\n\n#radicación para cualquier valor de índice \n# result &lt;- m^(1/n)\n# Donde m es la base y n el índice de la raíz\n\n\n\n\nR define el logaritmo en base e, o logaritmo natural. Para ampliar la ejecución para caulquier número mayor que 0 y base mayor a 0 y diferente a 1, tenemos dos opciones\n\nOpción 1:\n\n\n# log(&lt;tu_numero&gt;, base = &lt;tu base&gt;)\n\n\nOpción 2:\n\n\n# log(&lt;tu_numero&gt;,&lt;tu_base&gt;)\n\nEste caso es símil a una función que admite dos argumentos: valor del número de prueba y el valor de la base.",
+    "crumbs": [
+      "Home",
+      "R desde cero",
+      "semana10.qmd"
+    ]
+  },
+  {
+    "objectID": "semana10.html#operaciones-combinadas",
+    "href": "semana10.html#operaciones-combinadas",
+    "title": "semana10.qmd",
+    "section": "Operaciones Combinadas",
+    "text": "Operaciones Combinadas\n\nEjemplos:\n\nformula_1 &lt;- log(2.5^1.2, 2.33) + sqrt((430^(1/1.4)-5)/(6.2))",
+    "crumbs": [
+      "Home",
+      "R desde cero",
+      "semana10.qmd"
+    ]
   }
 ]

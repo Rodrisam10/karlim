@@ -14,6 +14,13 @@
     "text": "Diríjase a la barra de tareas de google colab, busque “entorno de ejecución” (o su equivalente en el idioma que tiene configurado).\n\n\nEn el menú desplegable, busque “cambiar entorno de ejecución” (o su equivalente en el idioma que tiene configurado) y dele click (Véase Imagen_1)\n\n\n\n\n\nImagen_1\n\n\n\n\nSe abre el menú “Cambiar tipo de entorno de ejecución”, en la casilla desplegable debajo de “Tipo de entorno de ejecución”, cambie la casilla por default “Python3” a “R” (Véase Imagen 2)\n\n\n\n\n\nImagen_2\n\n\n\n\nClick en guardar.\n\n\nAhora puede codear en R sin cargar paquetes adicionales. Para enviar su tarea por el classroom, sólo adjunte el link compartido de su cuaderno en Colab. Este método se usará hasta que el classroom soporte subir archivos.\n\n\"c_va.png\"\n\n[1] \"c_va.png\""
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
     "objectID": "semana10.html",
     "href": "semana10.html",
     "title": "semana10.qmd",
@@ -48,13 +55,6 @@
       "R desde cero",
       "semana10.qmd"
     ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "semana9.html",

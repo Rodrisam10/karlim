@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "codear_R_colab.html",
     "href": "codear_R_colab.html",
     "title": "Cómo codear en R dentro de google Colab",
@@ -55,6 +48,13 @@
       "R desde cero",
       "semana10.qmd"
     ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "semana9.html",
